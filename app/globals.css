@@ -69,8 +69,10 @@
   @layer base {
     * {
       @apply border-border;
+      scroll-behavior: smooth;
     }
     body {
+      scroll-behavior: smooth;
       @apply bg-background text-foreground;
     }
   }
