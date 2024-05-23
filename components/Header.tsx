@@ -2,6 +2,9 @@ import React, { useState } from 'react'
 import { Dialog, PopoverGroup } from '@headlessui/react'
 import { ModeToggle } from './ThemeToggle'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/16/solid'
+import { Button } from "./ui/button"
+import { Github, Instagram, Linkedin } from 'lucide-react'
+import Link from 'next/link'
 
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -34,7 +37,22 @@ const Header = () => {
             Experience
           </a>
         </PopoverGroup>
-        <div className="hidden lg:flex lg:flex-1 lg:justify-end">
+        <div className="hidden gap-2 lg:flex lg:flex-1 lg:justify-end">
+          <Button variant="outline" size="icon" asChild>
+            <Link href="https://www.instagram.com/brunoschallen/" target="_blank" rel="noopener noreferrer">
+              <Instagram className="h-4 w-4" />
+            </Link>
+          </Button>
+          <Button variant="outline" size="icon">
+            <Link href="https://www.linkedin.com/in/brunoschallenberger/" target="_blank" rel="noopener noreferrer">
+              <Linkedin className="h-4 w-4" />
+            </Link>
+          </Button>
+          <Button variant="outline" size="icon">
+            <Link href="https://github.com/schallenberger" target="_blank" rel="noopener noreferrer">
+              <Github className="h-4 w-4" />
+            </Link>
+          </Button>
           <ModeToggle />
         </div>
       </nav>
@@ -70,7 +88,22 @@ const Header = () => {
                   About
                 </a>
               </div>
-              <div className="py-6">
+              <div className="py-6 flex flex-col gap-2">
+                <Button variant="outline" size="icon" asChild>
+                  <Link href="https://www.instagram.com/brunoschallen/" target="_blank" rel="noopener noreferrer">
+                    <Instagram className="h-4 w-4" />
+                  </Link>
+                </Button>
+                <Button variant="outline" size="icon">
+                  <Link href="https://www.linkedin.com/in/brunoschallenberger/" target="_blank" rel="noopener noreferrer">
+                    <Linkedin className="h-4 w-4" />
+                  </Link>
+                </Button>
+                <Button variant="outline" size="icon">
+                  <Link href="https://github.com/schallenberger" target="_blank" rel="noopener noreferrer">
+                    <Github className="h-4 w-4" />
+                  </Link>
+                </Button>
                 <ModeToggle />
               </div>
             </div>
