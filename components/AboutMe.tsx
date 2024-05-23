@@ -28,7 +28,7 @@ const AboutMe = () => {
           ))}
         </div>
       </div>
-      <div className="relative shadow-md flex items-center justify-center">
+      <div className="relative flex items-center justify-center">
         <DirectionAwareHover imageUrl={imageUrl}>
         </DirectionAwareHover>
       </div>
