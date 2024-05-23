@@ -6,11 +6,11 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/16/solid'
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   return (
-    <header className="bg-background bg-opacity-70 w-full sticky top-0 left-0 z-[100]">
+    <header className="bg-background bg-opacity-70 w-full sticky top-0 left-0 z-40">
       <nav className="mx-auto flex items-center justify-between py-6" aria-label="Global">
         <div className="flex lg:flex-1">
           <a href="#" className="-m-1.5 p-1.5">
-            <span className="text-2xl font-bold">@Brunoschallen</span>
+            <span className="text-md sm:text-2xl font-bold">@Brunoschallen</span>
           </a>
         </div>
         <div className="flex lg:hidden">
@@ -38,7 +38,7 @@ const Header = () => {
           <ModeToggle />
         </div>
       </nav>
-      <Dialog className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
+      <Dialog className="z-50 lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
         <div className="fixed inset-0 z-10" />
         <Dialog.Panel className="fixed inset-y-0 right-0 w-full overflow-y-auto bg-background z-50 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
