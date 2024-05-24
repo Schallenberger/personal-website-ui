@@ -86,7 +86,7 @@ export function Experience() {
   ];
 
   return (
-    <section id='experience' className="py-32 bg-background hidden sm:flex md:flex lg:flex">
+    <section id='experience' className="py-8 md:py-32 bg-background hidden sm:flex md:flex lg:flex">
       <div className="h-[20rem] md:h-[40rem] [perspective:1000px] relative b flex flex-col max-w-5xl mx-auto w-full items-start justify-start mb-40">
         <Tabs tabs={tabs} />
       </div>

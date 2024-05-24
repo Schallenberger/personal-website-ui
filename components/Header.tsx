@@ -74,20 +74,6 @@ const Header = () => {
           </div>
           <div className="mt-6 flow-root">
             <div className="-my-6 divide-y divide-gray-500/10">
-              <div className="space-y-2 py-6">
-                <a
-                  href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 hover:bg-indigo-300"
-                >
-                  Home
-                </a>
-                <a
-                  href="#about"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 hover:bg-indigo-300"
-                >
-                  About
-                </a>
-              </div>
               <div className="py-6 flex flex-col gap-2">
                 <Button variant="outline" size="icon" asChild>
                   <Link href="https://www.instagram.com/brunoschallen/" target="_blank" rel="noopener noreferrer">
